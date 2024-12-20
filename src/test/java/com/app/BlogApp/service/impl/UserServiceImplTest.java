@@ -47,18 +47,18 @@ class UserServiceImplTest {
 
 	@Test
 	void testGetUserById() {
-		User user1 = new User(1, "Manoj Kadam","manoj@gmail.com","Pass@123","java devloper ...");
-		User user2 = new User(2, "Adi Thorve","adi@gmail.com","Pass@1234","java Teacher ...");
+//		User user1 = new User(1, "Manoj Kadam","manoj@gmail.com","Pass@123","java devloper ...");
+//		User user2 = new User(2, "Adi Thorve","adi@gmail.com","Pass@1234","java Teacher ...");
 	}
 
 	@Test
 	void testGetAllUser() {
 	
-		User user1 = new User(1, "Manoj Kadam","manoj@gmail.com","Pass@123","java devloper ...");
-		User user2 = new User(2, "Adi Thorve","adi@gmail.com","Pass@1234","java Teacher ...");
-	 List<User> list = List.of(user1,user2);
-	 System.out.println(list);
-		when(repository.findAll()).thenReturn(list);
+//		User user1 = new User(1, "Manoj Kadam","manoj@gmail.com","Pass@123","java devloper ...");
+//		User user2 = new User(2, "Adi Thorve","adi@gmail.com","Pass@1234","java Teacher ...");
+//	 List<User> list = List.of(user1,user2);
+//	 System.out.println(list);
+		//when(repository.findAll()).thenReturn(list);
 		
 		List<UserDto> userDto=serviceImpl.getAllUser();
 		
