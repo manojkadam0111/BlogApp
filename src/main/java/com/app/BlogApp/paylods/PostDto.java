@@ -1,6 +1,10 @@
 package com.app.BlogApp.paylods;
 
 import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
+
+import com.app.BlogApp.models.Comment;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -24,4 +28,6 @@ public class PostDto {
 	private CategoryDto category;
 
 	private UserDto user;
+	
+	private Set<Comment> comment= new HashSet<>();
 }
